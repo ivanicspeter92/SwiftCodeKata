@@ -9,28 +9,41 @@
 import XCTest
 @testable import CodeKataSwift
 
-class CodeKataSwiftTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class CodeKataSwiftTests: XCTestCase
+{
+    func testIterativeChop()
+    {
+        self.testKarateChop(IterativeKarateChopper());
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testRecursiveChop()
+    {
+        self.testKarateChop(RecursiveKarateChopper());
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    private func testKarateChop(chopper: KarateChopDelegate)
+    {
+        XCTAssertEqual(-1, chopper.chop(3, array: []))
+        XCTAssertEqual(-1, chopper.chop(3, array: [1]))
+        XCTAssertEqual(0,  chopper.chop(1, array: [1]))
+        
+        XCTAssertEqual(0,  chopper.chop(1, array: [1, 3, 5]))
+        XCTAssertEqual(1,  chopper.chop(3, array: [1, 3, 5]))
+        XCTAssertEqual(2,  chopper.chop(5, array: [1, 3, 5]))
+        XCTAssertEqual(-1, chopper.chop(0, array: [1, 3, 5]))
+        XCTAssertEqual(-1, chopper.chop(2, array: [1, 3, 5]))
+        XCTAssertEqual(-1, chopper.chop(4, array: [1, 3, 5]))
+        XCTAssertEqual(-1, chopper.chop(6, array: [1, 3, 5]))
+        
+        XCTAssertEqual(0,  chopper.chop(1, array: [1, 3, 5, 7]))
+        XCTAssertEqual(1,  chopper.chop(3, array: [1, 3, 5, 7]))
+        XCTAssertEqual(2,  chopper.chop(5, array: [1, 3, 5, 7]))
+        XCTAssertEqual(3,  chopper.chop(7, array: [1, 3, 5, 7]))
+        XCTAssertEqual(-1, chopper.chop(0, array: [1, 3, 5, 7]))
+        XCTAssertEqual(-1, chopper.chop(2, array: [1, 3, 5, 7]))
+        XCTAssertEqual(-1, chopper.chop(4, array: [1, 3, 5, 7]))
+        XCTAssertEqual(-1, chopper.chop(6, array: [1, 3, 5, 7]))
+        XCTAssertEqual(-1, chopper.chop(8, array: [1, 3, 5, 7]))
+
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

@@ -10,6 +10,9 @@
 		E55B81001C4779E800327966 /* CodeKataSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = E55B80FF1C4779E800327966 /* CodeKataSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E55B81071C4779E800327966 /* CodeKataSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55B80FC1C4779E800327966 /* CodeKataSwift.framework */; };
 		E55B810C1C4779E800327966 /* CodeKataSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55B810B1C4779E800327966 /* CodeKataSwiftTests.swift */; };
+		E55B81171C477A4700327966 /* KarateChopDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55B81161C477A4700327966 /* KarateChopDelegate.swift */; };
+		E55B81191C477B1700327966 /* IterativeKarateChopper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55B81181C477B1700327966 /* IterativeKarateChopper.swift */; };
+		E5A9F75C1C4CC614006165F9 /* RecursiveKarateChopper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9F75B1C4CC614006165F9 /* RecursiveKarateChopper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		E55B81061C4779E800327966 /* CodeKataSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeKataSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55B810B1C4779E800327966 /* CodeKataSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeKataSwiftTests.swift; sourceTree = "<group>"; };
 		E55B810D1C4779E800327966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E55B81161C477A4700327966 /* KarateChopDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KarateChopDelegate.swift; sourceTree = "<group>"; };
+		E55B81181C477B1700327966 /* IterativeKarateChopper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IterativeKarateChopper.swift; sourceTree = "<group>"; };
+		E5A9F75B1C4CC614006165F9 /* RecursiveKarateChopper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveKarateChopper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 			children = (
 				E55B80FF1C4779E800327966 /* CodeKataSwift.h */,
 				E55B81011C4779E800327966 /* Info.plist */,
+				E55B81161C477A4700327966 /* KarateChopDelegate.swift */,
+				E55B81181C477B1700327966 /* IterativeKarateChopper.swift */,
+				E5A9F75B1C4CC614006165F9 /* RecursiveKarateChopper.swift */,
 			);
 			path = CodeKataSwift;
 			sourceTree = "<group>";
@@ -194,6 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A9F75C1C4CC614006165F9 /* RecursiveKarateChopper.swift in Sources */,
+				E55B81171C477A4700327966 /* KarateChopDelegate.swift in Sources */,
+				E55B81191C477B1700327966 /* IterativeKarateChopper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +320,7 @@
 		E55B81111C4779E800327966 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +331,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = peterivanics.CodeKataSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		E55B81121C4779E800327966 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -376,6 +391,7 @@
 				E55B81121C4779E800327966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E55B81131C4779E800327966 /* Build configuration list for PBXNativeTarget "CodeKataSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +400,7 @@
 				E55B81151C4779E800327966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
