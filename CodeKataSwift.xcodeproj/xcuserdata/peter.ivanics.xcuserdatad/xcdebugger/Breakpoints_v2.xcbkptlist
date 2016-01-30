@@ -121,11 +121,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodeKataSwift/BowlingGame.swift"
-            timestampString = "475834171.363784"
+            timestampString = "475845113.05662"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
             landmarkName = "BowlingGame"
             landmarkType = "3">
          </BreakpointContent>
@@ -137,11 +137,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodeKataSwift/BowlingGame.swift"
-            timestampString = "475839986.108095"
+            timestampString = "475845113.05662"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "roll(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -153,11 +153,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodeKataSwift/BowlingGame.swift"
-            timestampString = "475839986.108095"
+            timestampString = "475845113.05662"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "score()"
             landmarkType = "5">
          </BreakpointContent>
@@ -169,11 +169,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodeKataSwift/BowlingGame.swift"
-            timestampString = "475839986.108095"
+            timestampString = "475845113.05662"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "score()"
             landmarkType = "5">
          </BreakpointContent>

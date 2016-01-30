@@ -15,6 +15,9 @@
 		E594D0371C5CA47B00FFA461 /* BowlingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E594D0361C5CA47B00FFA461 /* BowlingGameTests.swift */; };
 		E594D0391C5CA48600FFA461 /* BowlingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E594D0381C5CA48600FFA461 /* BowlingGame.swift */; };
 		E594D03B1C5CA58100FFA461 /* BowlingGameRequirements.txt in Resources */ = {isa = PBXBuildFile; fileRef = E594D03A1C5CA58100FFA461 /* BowlingGameRequirements.txt */; };
+		E594D03D1C5CD11200FFA461 /* PetersBowlingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E594D03C1C5CD11200FFA461 /* PetersBowlingGame.swift */; };
+		E594D03F1C5CD1A700FFA461 /* BowlingGameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E594D03E1C5CD1A700FFA461 /* BowlingGameDelegate.swift */; };
+		E594D0431C5CD24300FFA461 /* PetersBowlingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E594D0421C5CD24300FFA461 /* PetersBowlingGameTests.swift */; };
 		E5A9F75C1C4CC614006165F9 /* RecursiveKarateChopper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9F75B1C4CC614006165F9 /* RecursiveKarateChopper.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,9 @@
 		E594D0361C5CA47B00FFA461 /* BowlingGameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowlingGameTests.swift; sourceTree = "<group>"; };
 		E594D0381C5CA48600FFA461 /* BowlingGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowlingGame.swift; sourceTree = "<group>"; };
 		E594D03A1C5CA58100FFA461 /* BowlingGameRequirements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BowlingGameRequirements.txt; sourceTree = "<group>"; };
+		E594D03C1C5CD11200FFA461 /* PetersBowlingGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetersBowlingGame.swift; sourceTree = "<group>"; };
+		E594D03E1C5CD1A700FFA461 /* BowlingGameDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowlingGameDelegate.swift; sourceTree = "<group>"; };
+		E594D0421C5CD24300FFA461 /* PetersBowlingGameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetersBowlingGameTests.swift; sourceTree = "<group>"; };
 		E5A9F75B1C4CC614006165F9 /* RecursiveKarateChopper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveKarateChopper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,8 +110,10 @@
 		E594D0321C5CA42C00FFA461 /* Bowling Game */ = {
 			isa = PBXGroup;
 			children = (
+				E594D03E1C5CD1A700FFA461 /* BowlingGameDelegate.swift */,
 				E594D0381C5CA48600FFA461 /* BowlingGame.swift */,
 				E594D03A1C5CA58100FFA461 /* BowlingGameRequirements.txt */,
+				E594D03C1C5CD11200FFA461 /* PetersBowlingGame.swift */,
 			);
 			name = "Bowling Game";
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				E594D0361C5CA47B00FFA461 /* BowlingGameTests.swift */,
+				E594D0421C5CD24300FFA461 /* PetersBowlingGameTests.swift */,
 			);
 			name = "Bowling Game";
 			sourceTree = "<group>";
@@ -248,7 +257,9 @@
 				E5A9F75C1C4CC614006165F9 /* RecursiveKarateChopper.swift in Sources */,
 				E55B81171C477A4700327966 /* KarateChopDelegate.swift in Sources */,
 				E55B81191C477B1700327966 /* IterativeKarateChopper.swift in Sources */,
+				E594D03D1C5CD11200FFA461 /* PetersBowlingGame.swift in Sources */,
 				E594D0391C5CA48600FFA461 /* BowlingGame.swift in Sources */,
+				E594D03F1C5CD1A700FFA461 /* BowlingGameDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +269,7 @@
 			files = (
 				E594D0371C5CA47B00FFA461 /* BowlingGameTests.swift in Sources */,
 				E55B810C1C4779E800327966 /* CodeKataSwiftTests.swift in Sources */,
+				E594D0431C5CD24300FFA461 /* PetersBowlingGameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

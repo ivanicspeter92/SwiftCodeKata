@@ -14,7 +14,7 @@ import XCTest
 class BowlingGameTests: XCTestCase
 {
     // MARK: - Variables
-    private var game: BowlingGame!;
+    var game: BowlingGameDelegate!;
     
     // MARK: - Initializers
     /**
@@ -23,8 +23,8 @@ class BowlingGameTests: XCTestCase
      - Author: Peter Ivanics
      - Date: 30.01.2016.
      */
-    override func setUp() {
-        super.setUp();
+    override func setUp()
+    {
         self.game = BowlingGame();
     }
     
