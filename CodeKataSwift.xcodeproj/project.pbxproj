@@ -12,6 +12,9 @@
 		E55B810C1C4779E800327966 /* CodeKataSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55B810B1C4779E800327966 /* CodeKataSwiftTests.swift */; };
 		E55B81171C477A4700327966 /* KarateChopDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55B81161C477A4700327966 /* KarateChopDelegate.swift */; };
 		E55B81191C477B1700327966 /* IterativeKarateChopper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55B81181C477B1700327966 /* IterativeKarateChopper.swift */; };
+		E594D0371C5CA47B00FFA461 /* BowlingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E594D0361C5CA47B00FFA461 /* BowlingGameTests.swift */; };
+		E594D0391C5CA48600FFA461 /* BowlingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E594D0381C5CA48600FFA461 /* BowlingGame.swift */; };
+		E594D03B1C5CA58100FFA461 /* BowlingGameRequirements.txt in Resources */ = {isa = PBXBuildFile; fileRef = E594D03A1C5CA58100FFA461 /* BowlingGameRequirements.txt */; };
 		E5A9F75C1C4CC614006165F9 /* RecursiveKarateChopper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9F75B1C4CC614006165F9 /* RecursiveKarateChopper.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,9 @@
 		E55B810D1C4779E800327966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E55B81161C477A4700327966 /* KarateChopDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KarateChopDelegate.swift; sourceTree = "<group>"; };
 		E55B81181C477B1700327966 /* IterativeKarateChopper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IterativeKarateChopper.swift; sourceTree = "<group>"; };
+		E594D0361C5CA47B00FFA461 /* BowlingGameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowlingGameTests.swift; sourceTree = "<group>"; };
+		E594D0381C5CA48600FFA461 /* BowlingGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowlingGame.swift; sourceTree = "<group>"; };
+		E594D03A1C5CA58100FFA461 /* BowlingGameRequirements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BowlingGameRequirements.txt; sourceTree = "<group>"; };
 		E5A9F75B1C4CC614006165F9 /* RecursiveKarateChopper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveKarateChopper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,11 +83,10 @@
 		E55B80FE1C4779E800327966 /* CodeKataSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E594D0331C5CA44200FFA461 /* CodeKata.pragrog.com */,
+				E594D0321C5CA42C00FFA461 /* Bowling Game */,
 				E55B80FF1C4779E800327966 /* CodeKataSwift.h */,
 				E55B81011C4779E800327966 /* Info.plist */,
-				E55B81161C477A4700327966 /* KarateChopDelegate.swift */,
-				E55B81181C477B1700327966 /* IterativeKarateChopper.swift */,
-				E5A9F75B1C4CC614006165F9 /* RecursiveKarateChopper.swift */,
 			);
 			path = CodeKataSwift;
 			sourceTree = "<group>";
@@ -89,10 +94,46 @@
 		E55B810A1C4779E800327966 /* CodeKataSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				E55B810B1C4779E800327966 /* CodeKataSwiftTests.swift */,
+				E594D0351C5CA46500FFA461 /* Bowling Game */,
+				E594D0341C5CA45900FFA461 /* CodeKata.pragrog.com */,
 				E55B810D1C4779E800327966 /* Info.plist */,
 			);
 			path = CodeKataSwiftTests;
+			sourceTree = "<group>";
+		};
+		E594D0321C5CA42C00FFA461 /* Bowling Game */ = {
+			isa = PBXGroup;
+			children = (
+				E594D0381C5CA48600FFA461 /* BowlingGame.swift */,
+				E594D03A1C5CA58100FFA461 /* BowlingGameRequirements.txt */,
+			);
+			name = "Bowling Game";
+			sourceTree = "<group>";
+		};
+		E594D0331C5CA44200FFA461 /* CodeKata.pragrog.com */ = {
+			isa = PBXGroup;
+			children = (
+				E55B81161C477A4700327966 /* KarateChopDelegate.swift */,
+				E55B81181C477B1700327966 /* IterativeKarateChopper.swift */,
+				E5A9F75B1C4CC614006165F9 /* RecursiveKarateChopper.swift */,
+			);
+			name = CodeKata.pragrog.com;
+			sourceTree = "<group>";
+		};
+		E594D0341C5CA45900FFA461 /* CodeKata.pragrog.com */ = {
+			isa = PBXGroup;
+			children = (
+				E55B810B1C4779E800327966 /* CodeKataSwiftTests.swift */,
+			);
+			name = CodeKata.pragrog.com;
+			sourceTree = "<group>";
+		};
+		E594D0351C5CA46500FFA461 /* Bowling Game */ = {
+			isa = PBXGroup;
+			children = (
+				E594D0361C5CA47B00FFA461 /* BowlingGameTests.swift */,
+			);
+			name = "Bowling Game";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E594D03B1C5CA58100FFA461 /* BowlingGameRequirements.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +248,7 @@
 				E5A9F75C1C4CC614006165F9 /* RecursiveKarateChopper.swift in Sources */,
 				E55B81171C477A4700327966 /* KarateChopDelegate.swift in Sources */,
 				E55B81191C477B1700327966 /* IterativeKarateChopper.swift in Sources */,
+				E594D0391C5CA48600FFA461 /* BowlingGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E594D0371C5CA47B00FFA461 /* BowlingGameTests.swift in Sources */,
 				E55B810C1C4779E800327966 /* CodeKataSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

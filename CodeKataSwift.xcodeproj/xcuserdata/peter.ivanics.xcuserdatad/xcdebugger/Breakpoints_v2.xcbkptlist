@@ -22,7 +22,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodeKataSwift/IterativeKarateChopper.swift"
@@ -38,7 +38,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodeKataSwiftTests/CodeKataSwiftTests.swift"
@@ -51,49 +51,49 @@
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "CodeKataSwiftTests.CodeKataSwiftTests.(testKarateChop in _FA6E9DBDAAFD5EF2DF0D7A0249D72CDC) (CodeKataSwiftTests.CodeKataSwiftTests)(CodeKataSwift.KarateChopDelegate) -&gt; ()"
                   moduleName = "CodeKataSwiftTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/peter.ivanics/Desktop/CodeKataSwift/CodeKataSwiftTests/CodeKataSwiftTests.swift"
-                  timestampString = "474799839.585624"
+                  timestampString = "475834097.099292"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
                   endingLineNumber = "28"
-                  offsetFromSymbolStart = "941">
+                  offsetFromSymbolStart = "910">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "CodeKataSwiftTests.CodeKataSwiftTests.((testKarateChop in _FA6E9DBDAAFD5EF2DF0D7A0249D72CDC) (CodeKataSwiftTests.CodeKataSwiftTests) -&gt; (CodeKataSwift.KarateChopDelegate) -&gt; ()).(implicit closure #5)"
                   moduleName = "CodeKataSwiftTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/peter.ivanics/Desktop/CodeKataSwift/CodeKataSwiftTests/CodeKataSwiftTests.swift"
-                  timestampString = "474799839.585968"
+                  timestampString = "475834097.099609"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
                   endingLineNumber = "28"
-                  offsetFromSymbolStart = "10">
+                  offsetFromSymbolStart = "7">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "CodeKataSwiftTests.CodeKataSwiftTests.((testKarateChop in _FA6E9DBDAAFD5EF2DF0D7A0249D72CDC) (CodeKataSwiftTests.CodeKataSwiftTests) -&gt; (CodeKataSwift.KarateChopDelegate) -&gt; ()).(implicit closure #6)"
                   moduleName = "CodeKataSwiftTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/peter.ivanics/Desktop/CodeKataSwift/CodeKataSwiftTests/CodeKataSwiftTests.swift"
-                  timestampString = "474799839.586334"
+                  timestampString = "475834097.100004"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
                   endingLineNumber = "28"
-                  offsetFromSymbolStart = "4">
+                  offsetFromSymbolStart = "12">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -101,7 +101,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodeKataSwift/RecursiveKarateChopper.swift"
@@ -111,6 +111,70 @@
             startingLineNumber = "20"
             endingLineNumber = "20"
             landmarkName = "recuriveChop(_:array:beginIndex:endIndex:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeKataSwift/BowlingGame.swift"
+            timestampString = "475834171.363784"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "BowlingGame"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeKataSwift/BowlingGame.swift"
+            timestampString = "475839986.108095"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "roll(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeKataSwift/BowlingGame.swift"
+            timestampString = "475839986.108095"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "score()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeKataSwift/BowlingGame.swift"
+            timestampString = "475839986.108095"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "score()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
