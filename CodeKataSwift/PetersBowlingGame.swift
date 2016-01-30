@@ -10,7 +10,8 @@ import Foundation
 
 class PetersBowlingGame: BowlingGameDelegate
 {
-    class Frame
+    // MARK: - Internal classes
+    internal class Frame
     {
         enum BowlingFrameException: ErrorType
         {
@@ -109,7 +110,7 @@ class PetersBowlingGame: BowlingGameDelegate
         }
     }
     
-    class LastFrame: Frame
+    internal class LastFrame: Frame
     {
         private var extraRoll: Int?;
         
@@ -154,6 +155,30 @@ class PetersBowlingGame: BowlingGameDelegate
         }
     }
     
+    // MARK: - Variables
+    private var frames = [Frame]();
+    
+    enum BowlingException: ErrorType
+    {
+        case GameIsFinishedException;
+    }
+    
+    /**
+     Initializes the PetersBowlingGame object.
+     
+     - returns: The correctly initialized object.
+     
+     - Author: Peter Ivanics
+     - Date: 30.01.2016.
+     */
+    init()
+    {
+        for _ in 1...9
+        { self.frames.append(Frame()); }
+        
+        self.frames.append(LastFrame());
+    }
+    
     /**
      Rolls the bowling ball and knocks down a number of pins for the player.
      
@@ -164,7 +189,16 @@ class PetersBowlingGame: BowlingGameDelegate
      */
     func roll(pins: Int)
     {
-        
+        if let frame = self.getCurrentFrame()
+        {
+            do
+            {
+                try frame.roll(pins);
+            }
+            catch Frame.BowlingFrameException.TooManyRolls
+            { /*throw BowlingException.GameIsFinishedException;*/ }
+            catch {}
+        }
     }
     
     
@@ -178,6 +212,67 @@ class PetersBowlingGame: BowlingGameDelegate
      */
     func score() -> Int
     {
+        var cumulativeScore = 0;
+        
+        for frame in self.frames
+        { cumulativeScore += self.getScore(frame); }
+        cumulativeScore += self.calculateBonusScore();
+        
+        return cumulativeScore;
+    }
+    
+    /**
+     Tells if the game has ended.
+     
+     - returns: True, if the game is finished; false otherwise.
+     
+     - Author: Peter Ivanics
+     - Date: 30.01.2016.
+     */
+//    func isFinished() -> Bool
+//    {
+//        return self.getCurrentFrame() != nil;
+//    }
+    
+    // MARK: - Private functions
+    private func getScore(frame: Frame) -> Int
+    {
+        if let score = frame.score()
+        { return score; }
         return 0;
+    }
+    
+    private func calculateBonusScore() -> Int
+    {
+        var cumulativeBonus = 0;
+        
+        for i in 1...self.frames.count - 1
+        {
+            if self.frames[i - 1].isSpare(), let firstRoll = self.frames[i].firstRoll
+            { cumulativeBonus += firstRoll; }
+            if self.frames[i - 1].isStrike()
+            {
+                if let firstRollOfNext = self.frames[i].firstRoll
+                { cumulativeBonus += firstRollOfNext; }
+                
+                if let secondRollOfNext = self.frames[i].secondRoll
+                { cumulativeBonus += secondRollOfNext; }
+                else if /*self.frames[i].isStrike(),*/ let firstRollOfUpcoming = self.frames[i + 1].firstRoll
+                { cumulativeBonus += firstRollOfUpcoming; }
+            }
+        }
+        
+        return cumulativeBonus;
+    }
+    
+    private func getCurrentFrame() -> Frame?
+    {
+        for frame in self.frames
+        {
+            if frame.isFinished() == false // looking for the first frame which is not finished
+            { return frame; }
+        }
+        
+        return nil; // returning nil if all the frames were finished -> the game is over
     }
 }
